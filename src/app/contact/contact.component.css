@@ -1,0 +1,56 @@
+.img {
+    height: 400px;
+    width: 100vw;
+    background-image: url('https://t4.ftcdn.net/jpg/05/24/03/99/360_F_524039911_SJfffOLKTk1HZvTPyF9vv1FN6oCipyVi.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.b {
+    height: auto;
+    background-color: #dce4e6;
+    width: 100vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bac {
+    height: auto;
+    width: 100vw;
+    background-color: #f0f0f0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+.form-control {
+    border-radius: 25px;
+    background-color: #dce4e6;
+    border: none;
+    color: black;
+}
+
+.form-control::placeholder {
+    color: #555;
+}
+
+.btn-custom {
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    background-color: rgb(76, 76, 145);
+    color: white;
+}
+
+textarea.form-control {
+    height: 100px;
+}

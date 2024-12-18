@@ -1,0 +1,114 @@
+<nav class="nav">
+    <div class="left">
+        <i class="fa-solid fa-envelope"></i>
+        <span>{{email}}</span>
+        <i class="fa-solid fa-phone"></i>
+        <span>{{phone}}</span>
+    </div>
+    <div class="right">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+</nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="#">
+        <img src="https://www.vishvena.com/assets/images/vishvena-logo.png" alt="logo" class="img-fluid logo">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#hamburgerModal" aria-controls="hamburgerModal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" routerLink="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="#">Our Divisions</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/expertise">Expertise Areas</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact Us</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#" data-bs-toggle="modal" data-bs-target="#detailsModal"><i class="fas fa-info-circle"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end">
+      <div class="modal-header">
+        <button type="button" class="btn-close p-4" style="background-color: white;" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-body p-4" style="background-color: rgb(51, 51, 75); color: white;">
+         <img src="https://www.vishvena.com/assets/images/vishvena-logo.png" alt="img" style="width: 230px;  margin: 0 auto;">
+<br><br>
+         <p class="pt-3">
+          Discover innovation at Vishvena! Explore our services in <br> Intellectual Property, Artificial <br> Intelligence, Hardware, and <br> Software. Transform your <br> business with us today!
+         </p>
+         <br><br>
+         <h4>Contact Info</h4>
+         <br>
+         <p>No. 4-28/36/1, Kandi, Saraswati <br> Temple Kandi, <br>
+          Sangareddy Medak 502285 <br> Telangana</p>
+
+          <br><br>
+          <h5>+91 8296348166</h5>
+          <br><br>
+          <h4>Quick Links</h4>
+          <br>
+          <p>About Us</p>
+          <p>Expertise Area</p>
+          <p>Services</p>
+          <br>
+          <h4>Follow Us</h4>
+          <br>
+          <div class="list">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="hamburgerModal" tabindex="-1" aria-labelledby="hamburgerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-start">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body hum" style="background-color: navy; color: white;">
+                <div class="logo">
+                    <img src="https://www.vishvena.com/assets/images/vishvena-logo.png" alt="Logo" style="width: 330px; margin: 0 auto;">
+                </div>
+                <ul class="navbar-nav left-menu">
+                    <li class="nav-item"><a class="nav-link" routerLink="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="#">Our Divisions</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/expertise">Expertise Areas</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
